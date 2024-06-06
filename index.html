@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Monsal-Air</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="autor" content="grid">
+    <meta name="keywords" content="vuelos, viajes">
+
+    <link rel="stylesheet" type="text/css" href="../MonsalAir/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+</head>
+<body>
+
+    <header class="header">
+        <img src="../MonsalAir/imagenes/logofinal.png" alt="logo" class="header__logo">
+        <nav class="header__navegacion">
+
+            <p class="header__texto"><a class="header__link"> OFERTAS</a></p>
+            <p class="header__texto"><a class="header__link"> ALOJAMIENTOS</a></p>
+            <p class="header__texto"><a class="header__link"> VUELOS</a></p>
+            <p class="header__texto"><a class="header__link"> TRABAJA CON NOSOTROS</a></p>
+        </nav>
+
+
+
+    </header>
+
+    <!--TODO ESTO ES EL HEADER, CON EL MENU, EL LOGO PRINCIPAL IRÁ EN EL CENTRO Y LUEGO ABAJO LAS PAGINAS
+    -->
+
+    <main>
+        <section class="seccionHero">
+            <div class="seccionHero__contenedor">
+                <h2 class="seccionHero__titulo">Monsal-Air, viaja con nosotros</h2>
+                <form action="#" method="get" class="seccionHero__form">
+                    <input type="text" name="desde" id="d1" class="seccionHero__inputForm" placeholder="Origen">
+                    <button type="button" class="seccionHero__boton"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                    <input type="text" name="desde" id="h1" class="seccionHero__inputForm" placeholder="Destino">
+                    <input type="date" name="Cuando" id="c1" class="seccionHero__dateForm">
+                    <button type="button" class="seccionHero__inputSubmit"><i class="fa-solid fa-plane"></i></button>
+
+                </form>
+
+
+            </div>
+        </section>
+
+        <!--HASTA AQUI DURA LA SECCION DE BUSQUEDA DE VUELOS, CON LA BARRAY CON LA IMAGEN DE FONDO-->
+
+        <!--AQUÍ COMEINZA LA SIGUINETE SECCION DONDE OFRECEMOS VARIOS DESTINOS DE VUELOS-->
+
+        <section class="seccionDonde">
+            <h2 class="seccionDonde__titulo">Los mejores destinos</h2>
+            <div class="seccionDonde__contenedorCards">
+                <article class="seccionDonde__card">
+                <img src="imagenes/colombia.jpeg" alt="Colombia" class="seccionDonde__imagenCard">
+                <h3 class="seccionDonde__tituloCard">Colombia</h3>
+            </article>
+            
+
+                <article class="seccionDonde__card">
+                <img src="imagenes/california.jpeg" alt="EEUU" class="seccionDonde__imagenCard">
+                <h3 class="seccionDonde__tituloCard">Estados Unidos</h3>
+                </article>
+
+                <article class="seccionDonde__card">
+                    <img src="imagenes/sevilla.jpeg" alt="España" class="seccionDonde__imagenCard">
+                    <h3 class="seccionDonde__tituloCard">Andalucia</h3>
+                    </article>
+
+                    <article class="seccionDonde__card">
+                        <img src="imagenes/italia.jpeg" alt="Italia" class="seccionDonde__imagenCard">
+                        <h3 class="seccionDonde__tituloCard">Italia</h3>
+                        </article>
+
+                        <article class="seccionDonde__card">
+                            <img src="imagenes/chile.jpeg" alt="Chile" class="seccionDonde__imagenCard">
+                            <h3 class="seccionDonde__tituloCard">Chile</h3>
+                            </article>    
+
+
+            </div>
+        </section>
+        
+        <!--AQUI ACABA LA SECCION DE DESTINOS-->
+
+        <section class="seccionAlquiler">
+            <h2 class="seccionAlquiler__titulo">Alquila con nosotros</h2>
+            <div class="seccionAlquiler__contenedorSecciones">
+               <div class="seccionAlquiler__seccion">
+                <h3 class="seccionAlquiler__tituloSeccion">Vehiculos</h3>
+                <div class="seccionAlquiler__seccionCards">
+
+              
+                    <img src="imagenes/golf.jpg" alt="golf" class="seccionAlquiler__imagenCard">
+               
+            
+                    <img src="imagenes/moto.jpg" alt="moto" class="seccionAlquiler__imagenCard">
+               
+                </div>
+             </div>
+
+            <div class="seccionAlquiler__seccion">
+                <h3 class="seccionAlquiler__titulo">Estancias</h3>
+                <div class="seccionAlquiler__seccionCards">
+               
+                    <img src="imagenes/apartamento.jpg" alt="apartamentos" class="seccionAlquiler__imagenCard">
+                    
+                
+             
+                    <img src="imagenes/hotel.jpg" alt="hotel" class="seccionAlquiler__imagenCard">
+                </div>
+                    
+            </div> 
+            </div>
+        </section>
+
+
+        <section class="cardOferta">
+            <h2 class="cardOferta__titulo">OFERTA FLASH</h2>
+            <div class="cardOferta__card">
+                <img src="imagenes/marrueco.webp" alt="marruecos" class="cardOferta__imagen">
+                <div class="cardOferta__contenedorTexto">
+                    <span class="cardOferta__precio cardOferta__precio--antes">50eu.</span>
+                    <span class="cardOferta__precio cardOferta__precio--despues">10eu.</span>
+                    <p class="cardOferta__texto">La historia de Marruecos esta llena de riqueza. La cultura arabe cuenta con una mezcla de gastronomia de la tierra, arquitectura de Mezquitas y Rihads donde podras disfrutar de su musica y sus famosos tes.</p>
+                    <button type="button" class="cardOferta__botonComprar"> Comprar</button>
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+        <!--AQUI EMPIEZA LA SECCION DEL FOOTER-->
+
+        <footer class="footer">
+            <ul class="footer__listaLinks">
+                <li class="footer__elementoListaLinks">Terminos y condiciones</li>
+                <li class="footer__elementoListaLinks">Contacto legal</li>
+                <li class="footer__elementoListaLinks"> Politica de cookies</li>
+                <li class="footer__elementoListaLinks">Sobre nosotros</li>
+
+
+
+            </ul>
+
+            <ul class="footer__rrss">
+
+                <li class="footer__elementoRRSS"><i class="fa-brands fa-tiktok"></i></li>
+                <li class="footer__elementoRRSS"><i class="fa-brands fa-facebook"></i></li>
+                <li class="footer__elementoRRSS"><i class="fa-brands fa-twitter"></i></li>
+                <li class="footer__elementoRRSS"><i class="fa-brands fa-linkedin"></i></li>
+
+
+            </ul>
+
+
+        </footer>
+
+
+            
+
+
+            
+
+
+
+    </main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+@font-face {
+    font-family: aire;
+    src: url(../fonts/aAtomicMd.otf);
+}
+
+:root{
+    --rojo-oscuro: #540202ff;
+    --rojo-claro: #ec0000ff;
+    --blanco: #ffffffff;
+    --naranja: #f0a202ff;
+    
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    font-family:aire;
+}
+
+.header__logo{
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.header{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--rojo-claro);
+}
+
+@media screen and (max-width: 768px) {
+    .header__navegacion{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+.header__navegacion{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--rojo-oscuro);
+    color: var(--blanco);
+}
+
+.seccionHero{
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.625), rgba(0, 0, 0, 0.641)),url(../imagenes/cielo.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and ( max-width: 768px) {
+
+    .seccionHero__form{
+        display: flex;
+       flex-direction: column;
+    }
+
+    .seccionHero__inputForm{
+        margin: 1rem 0;
+    }
+
+    .seccionHero__dateForm{
+        margin: 1rem 0;
+    }
+    
+}
+
+/*ESTO ES PARA QUE EN EL MOVIL, LA APRTE DE BUSQUEDA DE VUELO SE VEA RESPONSIVE*/
+
+.seccionHero__titulo{
+    margin: 0;
+    color: var(--blanco);
+    text-align: center;
+    padding: 0.4rem;
+    
+}
+
+.seccionHero__form{
+    background-color: var(--naranja);
+    padding: 1rem 1.5rem 1rem;
+    border-radius: 1.9rem;
+    font-family: aire;
+}
+
+.seccionHero__boton{
+    border: none;
+    border-radius: 1.5rem;
+    background-color: rgb(235, 117, 7);
+    padding: 0.4rem 1rem 0.4rem;
+    cursor: pointer;
+    border: none;
+}
+
+.seccionHero__boton:hover{
+    background-color:var(--rojo-claro)
+}
+
+
+.seccionHero__inputForm{
+    font-family: aire;
+    border-radius: 1.2rem;
+    padding: 0.4rem 1rem 0.4rem;
+    color: black;
+    border: none;
+}
+
+.seccionHero__dateForm{
+    padding: 0.3rem 1rem 0.3rem;
+    border-radius: 1.2rem;
+    font-family: aire;
+    border: none;
+
+}
+
+.seccionHero__inputSubmit{
+    border-radius: 1.2rem;
+    padding: 0.4rem 1rem 0.4rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(235, 117, 7);
+}
+
+.seccionHero__inputSubmit:hover{
+    background-color: var(--rojo-claro);
+}
+
+/*HASTA AQUI LA PRIMERA SECCION DE LA PAGINA WEB, EL BUSCADOR DE VUELOS*/
+
+.seccionDonde__imagenCard{
+    width: 100%;
+    height: 20rem;
+    cursor: pointer;
+    filter: brightness(0.6);
+    border-radius: 0.5rem;
+
+}
+
+.seccionDonde__imagenCard:hover{
+    filter: brightness(1);
+}
+
+.seccionDonde__card{
+    width: 15%;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+
+  
+}
+
+.seccionDonde__contenedorCards{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.seccionDonde__titulo{
+    text-align: center;
+    padding: 0.7rem;
+}
+
+.seccionDonde{
+    background-color: var(--naranja);
+    padding: 1rem;
+}
+.seccionDonde__tituloCard{
+    text-align: center;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 992px){
+    .seccionDonde__contenedorCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .seccionDonde__card{
+        width: 60%;
+        margin: 2rem 0;
+    }
+}
+
+/*PARA EL MOVIL, ACABAMOS DE PONER LA LISTA DE DESTINOS DE FORMA VERTICAL Y EN FILA, ORDENADA*/
+/*SECCION TERMINADA*/
+
+.seccionAlquiler__seccion{
+    width: 50%;
+    padding: 1.5rem;
+
+}
+
+.seccionAlquiler__imagenCard{
+    width: 35%;
+    height: 10rem;
+}
+
+.seccionAlquiler__seccionCards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccionAlquiler__titulo{
+    text-align: center;
+}
+.seccionAlquiler__tituloSeccion{
+    text-align: center;
+}
+
+.seccionAlquiler__contenedorSecciones{
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+
+    .seccionAlquiler__contenedorSecciones{
+    flex-direction: column;
+align-items: center;
+    }
+
+    .seccionAlquiler__seccionCards{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    
+    
+}
+
+/*PARA PONER DE FORMA VERTICAL LO DE LOS ALQUILERES*/
+
+
+/* NUEVA SECCION*/
+
+.cardOferta{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.541)), url(../imagenes/flash.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cardOferta__card{
+    width: 50%;
+    display: flex;
+    border: 1px solid black;
+    background-color: var(--blanco);
+    border-radius: 1.4rem;
+}
+
+.cardOferta__imagen{
+    width: 50%;
+    height: 30rem;
+    padding: 1.2rem;
+    border-radius: 1.8rem;
+}
+
+
+.cardOferta__contenedorTexto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.4rem;
+
+}
+
+.cardOferta__precio{
+    color: red;
+    text-decoration: underline;
+    font-size: large;
+
+}
+.cardOferta__precio--antes{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+}
+
+.cardOferta__precio--despues{
+    font-size:2.5rem ;
+}
+
+.cardOferta__titulo{
+    font-size: 2rem;
+
+}
+
+.cardOferta__botonComprar{
+    color: black;
+
+    border-radius: 2rem;
+    background-color: var(--naranja);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.cardOferta__botonComprar:hover{
+    background-color: rgb(255, 205, 54);
+}
+
+@media screen and (max-width: 992px){
+    .cardOferta{
+        height: auto;
+    }
+
+    .cardOferta__card{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+/*AHORA COMIENZA EL FOOTER*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--rojo-claro);
+
+}
+
+.footer__rrss{
+    display: flex;
+    list-style-type: none;
+}
+
+.footer__elementoRRSS{
+    margin: 0 1.3rem;
+
+}
+.footer__listaLinks{
+    list-style-type: none;
+}
